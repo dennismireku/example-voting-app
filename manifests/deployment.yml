@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "qubes-4504"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "qubes-4504"
+  template:
+    metadata:
+      labels:
+        app: "qubes-4504"
+    spec:
+      containers:
+        - name: "qubes-4504"
+          image: "qube8.azurecr.io/qubes"
+          ports:
+          - containerPort: 80
