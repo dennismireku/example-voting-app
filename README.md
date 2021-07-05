@@ -26,7 +26,7 @@ Alternately, if you want to run it on a [Docker Swarm](https://docs.docker.com/e
 docker swarm init
 ```
 Once you have your swarm, in this directory run:
-```
+```dennis
 docker stack deploy --compose-file docker-stack.yml vote
 ```
 
